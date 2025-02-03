@@ -1,0 +1,35 @@
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+    .form-group {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+
+        label {
+            color: var(--primary);
+        }
+
+        input,
+        textarea {
+            padding: 0.5rem;
+            border-color: #eee;
+            border-style: solid;
+            border-radius: var(--border-radius);
+        }
+    }
+
+    button {
+        padding: 0.75rem;
+        border: none;
+        background-color: var(--primary);
+        color: #fff;
+        border-radius: var(--border-radius);
+    }
+
+    button:hover {
+        background-color: var(--primary-dark);
+    }
+}

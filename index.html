@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="de">
+    <head>
+        <meta charset="UTF-8" />
+        <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="description" content="Hier gibts spannendes über JNK STUDIOS" />
+        <title>JNK STUDIOS</title>
+    </head>
+    <body>
+        <div class="app">
+            <header>
+                <nav class="nav">
+                    <div class="nav__brand"><i class="fa-solid fa-atom-simple"></i> jnk studios</div>
+                    <div class="nav__links">
+                        <label class="toggle">
+                            <input type="checkbox" id="theme-toggle" />
+                            <span class="slider"></span>
+                        </label>
+                        <a class="nav__link" href="#" aria-label="Suche"><i class="fa-solid fa-magnifying-glass"></i></a>
+                        <a class="nav__link" href="#" id="menuToggle" aria-label="Open nav"><i class="fa-solid fa-bars-sort fa-flip-horizontal"></i></a>
+                    </div>
+
+                    <div class="offcanvas" id="offcanvas">
+                        <h4>Hier gibts nichts zu sehen <i class="fa-solid fa-face-awesome"></i></h4>
+
+                        <button id="close-nav" aria-label="close-nav"><i class="fa-solid fa-circle-xmark"></i></button>
+                    </div>
+                </nav>
+                <div class="hero">
+                    <h1 class="hero__heading">
+                        Make the web less <span>boring</span>, <br />
+                        one <span>pixel</span> at a time.
+                        <i class="fa-solid fa-snooze"></i>
+                    </h1>
+                    <div class="hero__showmore" id="skipHero">
+                        <a href="#steps" aria-label="To Content"><i class="fa-solid fa-down"></i></a>
+                    </div>
+                </div>
+            </header>
+            <section class="content">
+                <div class="content-block" id="steps">
+                    <h2 class="headline">Here is how it works</h2>
+                    <p class="subline">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam.</p>
+                    <div class="row">
+                        <div class="col-33">
+                            <div class="steps">
+                                <i class="fa-solid fa-square-1"></i>
+                                <p class="steps__txt">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod.</p>
+                            </div>
+                        </div>
+                        <div class="col-33">
+                            <div class="steps">
+                                <i class="fa-solid fa-square-2"></i>
+                                <p class="steps__txt">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod.</p>
+                            </div>
+                        </div>
+                        <div class="col-33">
+                            <div class="steps">
+                                <i class="fa-solid fa-square-3"></i>
+                                <p class="steps__txt">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="content-block" id="highlights">
+                    <h2 class="headline">Highlights</h2>
+                    <p class="subline">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam.</p>
+                    <div class="highlights">
+                        <div class="row">
+                            <div class="col-33">
+                                <div class="highlights__el">
+                                    <div class="highlights__icon">
+                                        <i class="fa-solid fa-photo-film"></i>
+                                    </div>
+                                    <h3>photo and film</h3>
+                                    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam.</p>
+                                </div>
+                            </div>
+                            <div class="col-33">
+                                <div class="highlights__el">
+                                    <div class="highlights__icon">
+                                        <i class="fa-duotone fa-solid fa-browser"></i>
+                                    </div>
+                                    <h3>web development</h3>
+                                    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam.</p>
+                                </div>
+                            </div>
+                            <div class="col-33">
+                                <div class="highlights__el">
+                                    <div class="highlights__icon">
+                                        <i class="fa-solid fa-thumbs-up"></i>
+                                    </div>
+                                    <h3>photo and film</h3>
+                                    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="content-block" id="reviews">
+                    <h2 class="headline">Reviews</h2>
+                    <p class="subline">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam.</p>
+                    <div class="reviews">
+                        <div class="row">
+                            <div class="col">
+                                <div class="reviews__el">
+                                    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+                                    <h3><i class="fa-brands fa-square-x-twitter"></i> Max Mustermann</h3>
+                                </div>
+                            </div>
+
+                            <div class="col">
+                                <div class="reviews__el">
+                                    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+                                    <h3><i class="fa-brands fa-square-x-twitter"></i> Betina Musterfrau</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="content-block" id="form">
+                    <h2 class="headline">Contact me</h2>
+                    <p class="subline">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam.</p>
+
+                    <form action="#" method="post">
+                        <div class="row">
+                            <div class="col-33">
+                                <div class="form-group">
+                                    <label for="name">Name:</label>
+                                    <input type="text" id="name" name="name" required />
+                                </div>
+                            </div>
+                            <div class="col-33">
+                                <div class="form-group">
+                                    <label for="email">Email:</label>
+                                    <input type="email" id="email" name="email" required />
+                                </div>
+                            </div>
+                            <div class="col-33">
+                                <div class="form-group">
+                                    <label for="subject">Subject:</label>
+                                    <input type="text" id="subject" name="subject" />
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Message:</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+
+                        <button type="submit">Send Message</button>
+                    </form>
+                </div>
+            </section>
+        </div>
+        <footer>
+            <div class="footer-links">
+                <a href="#" class="footer-link">Impressum</a>
+                <a href="#" class="footer-link">Datenschutz</a>
+            </div>
+        </footer>
+        <script type="module" src="/src/main.js"></script>
+        <script src="https://kit.fontawesome.com/d0fb7b0ffd.js" crossorigin="anonymous"></script>
+        <!-- <script>
+            AOS.init();
+        </script> -->
+    </body>
+</html>

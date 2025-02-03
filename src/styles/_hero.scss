@@ -1,0 +1,70 @@
+.hero {
+    --heading-size: 4rem;
+
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    height: 100vh;
+
+    &__heading {
+        position: relative;
+        display: inline-block;
+        color: var(--txt-color);
+        font-size: var(--heading-size);
+        line-height: var(--heading-size);
+        font-weight: 900;
+        font-family: system-ui;
+
+        span {
+            color: var(--primary);
+        }
+
+        i {
+            position: absolute;
+            right: -3rem;
+            top: -3rem;
+            transform: rotate(-8deg) scale(-1);
+
+            color: var(--secondary);
+        }
+    }
+
+    &__showmore {
+        position: absolute;
+        bottom: 3rem;
+        a {
+            color: var(--secondary);
+        }
+        i {
+            animation: bounce 2s infinite;
+            font-size: 3rem;
+        }
+
+        @keyframes bounce {
+            0%,
+            20%,
+            50%,
+            80%,
+            100% {
+                transform: translateY(0);
+            }
+            40% {
+                transform: translateY(-30px);
+            }
+            60% {
+                transform: translateY(-10px);
+            }
+        }
+    }
+}
+
+@media (max-width: 993px) {
+    .hero__heading {
+        i {
+            display: none;
+        }
+    }
+}

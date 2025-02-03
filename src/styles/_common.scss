@@ -1,0 +1,160 @@
+* {
+    font-family: "Outfit", system-ui;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--bg-color);
+}
+
+.app {
+    margin: 0 auto;
+}
+
+.content-block {
+    padding-top: 7.5rem;
+}
+
+.content-block:last-child {
+    margin-bottom: 15rem;
+}
+
+.full-width {
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+}
+
+@media (min-width: 388px) {
+    .app {
+        max-width: 350px;
+    }
+}
+
+@media (min-width: 576px) {
+    .app {
+        max-width: 540px;
+    }
+}
+@media (min-width: 768px) {
+    .app {
+        max-width: 720px;
+    }
+}
+@media (min-width: 993px) {
+    .app {
+        max-width: 960px;
+    }
+
+    .content-block {
+        padding-top: 10rem;
+    }
+}
+@media (min-width: 1200px) {
+    .app {
+        max-width: 1140px;
+    }
+
+    .content-block {
+        --block-padding: 2rem;
+        --block-margin: 2rem;
+    }
+}
+@media (min-width: 1400px) {
+    .app {
+        max-width: 1320px;
+    }
+}
+
+.hidden {
+    display: none !important;
+}
+
+.btn-group {
+    display: flex;
+    gap: 1rem;
+}
+
+.btn {
+    --btn-padding-x: 1rem;
+    --btn-padding-y: 1rem;
+    --btn-font-size: 1.1rem;
+
+    padding: var(--btn-padding-y) var(--btn-padding-x);
+
+    background-color: var(--primary);
+    text-decoration: none;
+    font-weight: 500;
+    font-size: var(--btn-font-size);
+    color: #ffffff;
+    border-radius: var(--btn-border-radius);
+}
+
+.headline {
+    font-size: 2rem;
+    font-weight: 600;
+    color: var(--txt-color);
+}
+
+.toggle {
+    position: relative;
+    display: inline-block;
+    width: 50px;
+    height: 24px;
+
+    input {
+        opacity: 0;
+        width: 0;
+        height: 0;
+    }
+
+    .slider {
+        position: absolute;
+        cursor: pointer;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #ccc;
+        transition: 0.4s;
+        border-radius: 24px;
+    }
+
+    .slider:before {
+        position: absolute;
+        content: "";
+        height: 20px;
+        width: 20px;
+        left: 2px;
+        bottom: 2px;
+        background-color: white;
+        transition: 0.4s;
+        border-radius: 50%;
+    }
+    input:checked + .slider {
+        background-color: var(--secondary);
+    }
+    input:checked + .slider:before {
+        transform: translateX(26px);
+    }
+}
+
+footer {
+    background-color: var(--primary);
+    height: 300px;
+}
+
+.footer-links {
+    @extend .app;
+
+    display: flex;
+    gap: 1rem;
+}
+
+.footer-link {
+    margin-top: 2rem;
+    color: #fff;
+}

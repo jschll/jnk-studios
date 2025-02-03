@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&display=swap" rel="stylesheet" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+        <link rel="stylesheet" href="node_modules/@ritterim/skellycss/dist/style.css" />
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>JNK STUDIOS</title>
+    </head>
+    <body>
+        <div class="app">
+            <header>
+                <nav class="nav">
+                    <div class="nav__brand"><i class="fa-solid fa-ghost"></i></div>
+                    <button class="nav__burger" id="navButton" aria-label="burger-menu">
+                        <i class="fa-solid fa-bars"></i>
+                    </button>
+                    <div class="nav__extended hidden" id="navExtended">
+                        <a href="#" class="nav__link"><i class="fa-solid fa-section"></i>Datenschutz</a>
+                        <a href="#" class="nav__link"><i class="fa-solid fa-section"></i>Impressum</a>
+                    </div>
+                    <div class="nav__close hidden" id="navClose">
+                        <i class="fa-solid fa-xmark"></i>
+                    </div>
+                </nav>
+            </header>
+            <div class="hero">
+                <a class="hero__btn" href="#">test</a>
+                <h1 class="hero__heading">
+                    Making the Web Less Boring,<br />
+                    One Pixel at a Time.
+                </h1>
+                <div class="btn-group">
+                    <a class="btn" href="#prices">prices<i class="fa-brands fa-bitcoin"></i></a>
+                    <a class="btn" href="#contact">contact<i class="fa-solid fa-id-badge"></i></a>
+                </div>
+            </div>
+            <div class="content-block" data-aos="fade-up">
+                <h3 class="headline"><i class="fa-solid fa-hand-spock"></i>explanation</h3>
+                <p class="skeleton">
+                    <span class="skeleton__line"><span class="skeleton--animation"></span></span>
+                    <span class="skeleton__line"><span class="skeleton--animation"></span></span>
+                    <span class="skeleton__line"><span class="skeleton--animation"></span></span>
+                    <span class="skeleton__line"><span class="skeleton--animation"></span></span>
+                </p>
+            </div>
+            <div id="features" data-aos="fade-up"></div>
+
+            <div class="content-block" id="prices" data-aos="fade-up">
+                <h3 class="headline"><i class="fa-brands fa-bitcoin"></i>prices</h3>
+                <div class="price__row">
+                    <div class="price">
+                        <p class="price__plan">Basic plan</p>
+                        <h3 class="price__price">45$</h3>
+                        <p class="price__description">Perfect for small businesses or individuals just getting started with professional web solutions.</p>
+                        <p class="price__benefit"><i class="fa-solid fa-fire"></i>Responsive Website Design</p>
+                        <p class="price__benefit"><i class="fa-solid fa-fire"></i>SEO Optimization for 3 Pages</p>
+                        <p class="price__benefit"><i class="fa-solid fa-fire"></i>Fast 24-Hour Support</p>
+                        <p class="price__benefit"><i class="fa-solid fa-fire"></i>Monthly Performance Report</p>
+                    </div>
+                    <div class="price best-deal">
+                        <p class="price__plan">Pro Plan</p>
+                        <h3 class="price__price">99$</h3>
+                        <p class="price__description">Designed for growing businesses looking to scale with advanced features and professional support.</p>
+                        <p class="price__benefit"><i class="fa-solid fa-fire"></i>Custom Website Design</p>
+                        <p class="price__benefit"><i class="fa-solid fa-fire"></i>SEO Optimization for 10 Pages</p>
+                        <p class="price__benefit"><i class="fa-solid fa-fire"></i>Priority 12-Hour Support</p>
+                        <p class="price__benefit"><i class="fa-solid fa-fire"></i>Access to Premium Templates</p>
+                    </div>
+                    <div class="price">
+                        <p class="price__plan">Pro+ Plan</p>
+                        <h3 class="price__price">199$</h3>
+                        <p class="price__description">Built for ambitious businesses that demand premium performance and hands-on collaboration.</p>
+                        <p class="price__benefit"><i class="fa-solid fa-fire"></i>Fully Customizable Website Design</p>
+                        <p class="price__benefit"><i class="fa-solid fa-fire"></i>Advanced SEO & Keyword Strategy</p>
+                        <p class="price__benefit"><i class="fa-solid fa-fire"></i>Dedicated Account Manager</p>
+                        <p class="price__benefit"><i class="fa-solid fa-fire"></i>Free Hosting for 1 Year</p>
+                    </div>
+                </div>
+            </div>
+            <div class="content-block" data-aos="fade-up">
+                <h3 class="headline"><i class="fa-solid fa-brain"></i>clients</h3>
+                <div class="client">
+                    <div class="client__client">
+                        <div class="client__image-video"><i class="fa-solid fa-clapperboard"></i></div>
+                        <h3 class="client__headline">musterfirma gmbh</h3>
+                        <p class="client__description">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt.</p>
+                        <a class="btn btn-inverted" href="#">more infos</a>
+                    </div>
+                    <div class="client__client">
+                        <div class="client__image-photo"><i class="fa-solid fa-camera-retro"></i></div>
+                        <h3 class="client__headline">musterfirma gmbh</h3>
+                        <p class="client__description">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt.</p>
+                        <a class="btn btn-inverted" href="#">more infos</a>
+                    </div>
+                </div>
+            </div>
+            <div class="content-block" id="contact" data-aos="fade-up">
+                <h3 class="headline"><i class="fa-solid fa-id-badge"></i>contact me</h3>
+                <p class="skeleton description">
+                    <span class="skeleton__line"><span class="skeleton--animation"></span></span>
+                    <span class="skeleton__line"><span class="skeleton--animation"></span></span>
+                    <span class="skeleton__line"><span class="skeleton--animation"></span></span>
+                </p>
+                <form class="form">
+                    <div class="form__row">
+                        <div class="input-group">
+                            <label for="lastname">First name</label>
+                            <input type="text" name="name" id="lastname" placeholder="" autocomplete="true" />
+                        </div>
+                        <div class="input-group">
+                            <label for="firstname">Last name</label>
+                            <input type="text" name="name" id="firstname" placeholder="" autocomplete="true" />
+                        </div>
+                    </div>
+                    <div class="form__row">
+                        <div class="input-group">
+                            <label for="mail">Email address</label>
+                            <input type="email" name="email" id="mail" placeholder="" autocomplete="true" />
+                        </div>
+                    </div>
+                    <button class="btn">Submit<i class="fa-solid fa-paper-plane"></i></button>
+                </form>
+            </div>
+        </div>
+        <footer class="full-width footer">
+            <div class="app footer__row">
+                <div class="footer__links">
+                    <a class="footer__link" href="#">datenschutz</a>
+                    <a class="footer__link" href="#">impressum</a>
+                    <a class="footer__link" href="#">contact</a>
+                </div>
+                <div class="footer__socials">
+                    <div class="footer__social">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </div>
+                    <div class="footer__social">
+                        <i class="fa-brands fa-tiktok"></i>
+                    </div>
+                    <div class="footer__social">
+                        <i class="fa-brands fa-instagram"></i>
+                    </div>
+                    <div class="footer__social">
+                        <i class="fa-brands fa-snapchat"></i>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <script type="module" src="/src/main.js"></script>
+        <script src="https://kit.fontawesome.com/dfccd0410e.js" crossorigin="anonymous"></script>
+        <script src="node_modules/@ritterim/skellycss/dist/skelly.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
+    </body>
+</html>

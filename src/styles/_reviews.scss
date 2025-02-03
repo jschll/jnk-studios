@@ -1,0 +1,17 @@
+.reviews {
+    &__el {
+        padding: 1rem;
+        background-color: var(--secondary-light);
+        border-radius: var(--border-radius);
+
+        h3 {
+            margin-top: 0.5rem;
+            color: var(--txt-color);
+            font-size: 1.4rem;
+        }
+
+        p {
+            color: var(--txt-color);
+        }
+    }
+}

@@ -1,0 +1,127 @@
+.nav {
+    --nav-font-size: 1.5rem;
+    --nav-padding-x: 1.5rem;
+    --nav-padding-y: 1rem;
+    --nav-margin-y: 1rem;
+
+    position: fixed;
+    top: 1.5rem;
+    width: 100%;
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding-top: var(--nav-padding-y);
+    padding-bottom: var(--nav-padding-y);
+
+    background-color: var(--primary);
+    border-radius: var(--border-radius);
+
+    &__brand {
+        padding-left: var(--nav-padding-x);
+        font-size: var(--nav-font-size);
+        color: var(--primary-light);
+
+        i {
+            font-size: var(--icon-size);
+            padding-right: calc(0.5 * var(--nav-padding-x));
+        }
+    }
+
+    &__links {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        padding-right: var(--nav-padding-x);
+    }
+
+    &__link {
+        text-decoration: none;
+        color: #ffffff;
+        font-weight: 600;
+        font-size: var(--nav-font-size);
+    }
+
+    &__link:hover {
+        background-color: var(--brand-color-tint-4);
+        border-radius: var(--border-radius);
+    }
+
+    .offcanvas {
+        position: fixed;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 4rem;
+        height: 100vh;
+        width: 100vw;
+        top: 0;
+        right: -100vw;
+        z-index: 999;
+
+        transition: right 0.3s ease;
+
+        background-color: var(--primary);
+
+        h4 {
+            font-size: 4rem;
+            color: #fff;
+            text-align: center;
+        }
+
+        button {
+            background: none;
+            border: none;
+
+            font-size: 2rem;
+            color: #fff;
+        }
+
+        button:hover {
+            cursor: pointer;
+        }
+    }
+
+    .offcanvas.open {
+        right: 0;
+    }
+}
+
+@media (min-width: 388px) {
+    .nav {
+        max-width: 350px;
+    }
+}
+
+@media (min-width: 576px) {
+    .nav {
+        max-width: 540px;
+    }
+}
+@media (min-width: 768px) {
+    .nav {
+        max-width: 720px;
+    }
+}
+@media (min-width: 993px) {
+    .nav {
+        max-width: 960px;
+    }
+}
+@media (min-width: 1200px) {
+    .nav {
+        max-width: 1140px;
+    }
+
+    .content-block {
+        --block-padding: 2rem;
+        --block-margin: 2rem;
+    }
+}
+@media (min-width: 1400px) {
+    .nav {
+        max-width: 1320px;
+    }
+}
